@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+#honeypotject_warning {
+	text-align: center;
+	border: 1px solid black;
+	background-color: #39678E;
+	color: white; }
+
+#honeypotject_warning td {
+	color: white;
+	font: 13px sans-serif;
+	padding: 0 0 0 7px; }
+
+#honeypotject_warning td#sign {
+	color: yellow;
+	font-family: serif;
+	font-size: 42pt;
+	font-weight: bold;
+	padding: 0 10 0 14; }
+
+#honeypotject_warning td#note {
+	color: #ddd;
+	font-size: 11px; }
+
+#honeypotject_warning a {
+	color: #AAE0AA;
+	text-decoration: none; }
+
+#honeypotject_warning a:hover {
+	color: #FFFFBE; }

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="system" method="upgrade">
+	<name>PLG_HONEYPOTJECT</name>
+	<creationDate>Mai 2013</creationDate>
+	<author>Michael Herpin</author>
+	<authorEmail>john.doe@example.org</authorEmail>
+	<authorUrl>http://www.example.org</authorUrl>
+	<copyright>(C) 2008 Copyright Info</copyright>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<version>0.1</version>
+	<releaseDate>2013-05-01</releaseDate>
+	<description>PLG_HONEYPOTJECT_DESC</description>
+	<files folder="site">
+		<filename plugin="honeypotject">honeypotject.php</filename>
+		<folder>media</folder>
+		<folder>language</folder>
+	</files>
+	<config>
+	    <fields name="params">
+		    <fieldset name="basic">
+				<field type="text" name="honeyproject_apikey" size="16" label="PLG_HONEYPOTJECT_APIKEY_LABEL" description="PLG_HONEYPOTJECT_APIKEY_TEXT" />
+				<field type="spacer" name="myspacer" label="PLG_HONEYPOTJECT_DASH_IMAGE" />
+		    </fieldset>
+
+		    <fieldset name="Mon onglet" addfieldpath="../plugins/system/honeypotject/fields">
+				<field type="InfectedLog" name="TITRO" label="ZZZZZ" description="XXXXXX" />
+		    </fieldset>
+
+		</fields>
+	</config>
+    <updateservers>
+        <server type="extension" priority="1" name="HoneyPotJect Update Site">https://github.com/labeille/HoneyPotJect/master/xmap-update.xml
+		</server>
+    </updateservers>
+</extension>
